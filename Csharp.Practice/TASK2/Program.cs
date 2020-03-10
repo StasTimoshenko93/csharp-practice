@@ -8,7 +8,7 @@ namespace TASK2
         static void Main(string[] args)
         {
             //используется параметр типа object, Я не внимательно прочитал задание, поэтому не указал  в виде коментария
-            // но, при выполнении задания, когда использовал метод foreach, то там указан тип.
+            // но, при выполнении задания, когда использовал метод foreach, то там указан тип. => object list
 
             ArrayList arrayList = new ArrayList();
             arrayList.Add(45); //boxing
