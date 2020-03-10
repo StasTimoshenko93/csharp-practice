@@ -8,7 +8,7 @@ namespace TASK1
         {
             short value = 5;
             object valueO = value;
-            sbyte valueB = (sbyte)value;
+            sbyte valueB = (sbyte)(short)value;
 
             Console.WriteLine($"Type :{valueB.GetType()}, Value {valueB} ");
 
