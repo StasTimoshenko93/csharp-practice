@@ -8,10 +8,10 @@ namespace TASK2
         static void Main(string[] args)
         {
             ArrayList arrayList = new ArrayList();
-            arrayList.Add(45); 
-            arrayList.Add(true);
-            arrayList.Add("hello");
-            arrayList.Add(24.45);
+            arrayList.Add(45); //boxing
+            arrayList.Add(true);//boxing
+            arrayList.Add("hello");//unboxing
+            arrayList.Add(24.45);//boxing
             foreach(object list in arrayList)
             {
                 Console.WriteLine(list.GetType());
