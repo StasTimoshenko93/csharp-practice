@@ -10,7 +10,7 @@ namespace TASK2
             ArrayList arrayList = new ArrayList();
             arrayList.Add(45); //boxing
             arrayList.Add(true);//boxing
-            arrayList.Add("hello");//unboxing
+            arrayList.Add("hello");//false
             arrayList.Add(24.45);//boxing
             foreach(object list in arrayList)
             {
