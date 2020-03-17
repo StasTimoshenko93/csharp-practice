@@ -8,7 +8,6 @@ namespace lect._5Greeting
         {
             TimeSpan ttimeNow = DateTime.Now.TimeOfDay;
             int timeNow = ttimeNow.Hours;
-            //TimeSpan.FromHours
             if (timeNow >= 9 && timeNow < 12)
             {
                 Console.WriteLine("Good morning gays");
