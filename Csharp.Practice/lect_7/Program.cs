@@ -23,15 +23,12 @@ namespace lect_7
             }
 
             arrayTask2[0] = (int)arrayTask2[0] + 10;
-
             arrayTask2[2] += " guys!";
 
             for (int i = 0; i < arrayTask2.Length; i++)
             {
                 Console.WriteLine(arrayTask2[i]);
             }
-
-
         }
 
         static void Task3()
@@ -41,7 +38,7 @@ namespace lect_7
             int[] arrayTask3 = new int[50];
             for (int i = 0; i < arrayTask3.Length; i++)
             {
-                arrayTask3[i] = random.Next(1,10);
+                arrayTask3[i] = random.Next(1,100);
             }
 
             for (int i = 0; i < arrayTask3.Length; i++)
@@ -54,12 +51,13 @@ namespace lect_7
             Console.WriteLine($"Максимальное значение { arrayTask3[maxValue]}");
         }
 
-
-
         static void Main(string[] args)
         {
+            Console.WriteLine("TASK1");
             Task1();
+            Console.WriteLine("TASK2");
             Task2();
+            Console.WriteLine("TASK3");
             Task3();
         }
     }
