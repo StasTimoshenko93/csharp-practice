@@ -12,7 +12,7 @@ namespace lect11.Shapes
 
         public virtual double GetArea()
         {
-            return 0;
+            return GetArea();
         }
 
     }
