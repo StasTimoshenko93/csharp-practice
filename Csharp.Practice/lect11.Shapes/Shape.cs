@@ -4,16 +4,16 @@ using System.Text;
 
 namespace lect11.Shapes
 {
-   abstract class  Shape
+   public  class  Shape
     {
-        public virtual int getArea(int a, int b)
+        public  string Name { get; set; }
+
+        public int Value { get; set; }
+
+        public virtual double GetArea()
         {
-            return a * b;
+            return 0;
         }
 
-        public virtual int getArea(int a)
-        {
-            return a * a;
-        }
     }
 }

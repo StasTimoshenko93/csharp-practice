@@ -4,19 +4,18 @@ using System.Text;
 
 namespace lect11.Shapes
 {
-    class triangle : Shape
+    public class Triangle : Shape
     {
-        public int _width { get; set; }
-        public int _height { get; set; }
-
-        public triangle (int width, int height)
+        public int Height { get; set; }
+        public Triangle(int value, int height)
         {
-            _width = width;
-            _height = height;
+            Name = "Треугольник";
+            Value = value;
+            Height = height;
         }
-        public override int getArea(int a, int b)
+        public override double GetArea()
         {
-            return 1 / 2 * a * b;
+            return 0.5 * Value*Height;
         }
     }
 }

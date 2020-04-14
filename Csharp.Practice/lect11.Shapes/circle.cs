@@ -4,21 +4,17 @@ using System.Text;
 
 namespace lect11.Shapes
 {
-    class circle : Shape
+   public class Circle : Shape
     {
-        public int Radius { get; set; }
-        public circle(int r)
+      public Circle(int value)
         {
-            Radius = r;
+            Value = value;
+            Name = "Круг";
         }
-
-        public override int getArea()
+        public override double GetArea()
         {
-            int area = 3 * a * a;
-            return area;
+            return Math.PI*Math.Pow(Value,Value);
         }
-
-       
     }
 
     

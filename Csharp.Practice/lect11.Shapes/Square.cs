@@ -4,13 +4,16 @@ using System.Text;
 
 namespace lect11.Shapes
 {
-    class Square : Shape
+    public class Square : Shape
     {
-        public int Side { get; set; }
-
-        public Square(int side)
+        public Square( int value)
         {
-            Side = side;
+            Name = "Квадрат";
+            Value = value;
+        }
+        public override double GetArea()
+        {
+            return  Math.Pow(Value, Value);
         }
     }
 }
